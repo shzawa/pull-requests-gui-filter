@@ -2,6 +2,12 @@
   "extends": "./.wxt/tsconfig.json",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // FIXME: shadnc/uiのコンポーネントをインストールする際アンコメント必要。
+    //  entrypoints/content内でtsconfig.jsonを上書きしたい
+    // "baseUrl": ".",
+    // "paths": {
+    //   "@/*": ["./*"]
+    // }
   }
 }
